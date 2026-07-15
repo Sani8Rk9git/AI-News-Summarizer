@@ -1,0 +1,163 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Body */
+
+body{
+    background:#f4f7fc;
+    min-height:100vh;
+}
+
+/* Navbar */
+
+nav{
+    width:100%;
+    padding:20px 8%;
+    /* background:#1e293b; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 4px 15px rgba(35, 174, 229, 0.3);
+}
+
+nav h1{
+    font-size:2rem;
+    font-weight:600;
+    /* color:#38bdf8; */
+}
+
+/* Main Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+/* Hero Section */
+
+#hero{
+    text-align:center;
+}
+
+#hero h2{
+    font-size:2.4rem;
+    margin-bottom:20px;
+}
+
+#hero p{
+    max-width:750px;
+    margin:auto;
+    /* color:#cbd5e1; */
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+#inputSec{
+    text-align:center;
+}
+
+#inputSec h2{
+    font-size:2.1rem;
+    margin-bottom:30px;
+}
+
+#resultSection{
+    margin-top:50px;
+    /* display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px; */
+}
+
+#qaSection{
+    margin-top:50px;
+    text-align: center;
+}
+
+.card{
+    box-shadow:0 4px 15px rgba(35, 174, 229, 0.3);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom: 20px;
+}
+/* #resultSection  */
+
+textarea{
+    width:100%;
+    height:280px;
+    resize:none;
+    border:none;
+    outline:none;
+    padding:20px;
+    font-size:1rem;
+    border-radius:12px;
+    /* background:#1e293b;
+    color:white; */
+    margin-top:10px;
+    box-shadow:0 4px 15px rgba(35, 174, 229, 0.3);
+}
+/* Buttons */
+
+input{
+    width:100%;
+    resize:none;
+    border:none;
+    outline:none;
+    padding:20px;
+    font-size:1rem;
+    border-radius:12px;
+    /* background:#1e293b;
+    color:white; */
+    margin-top:10px;
+    box-shadow:0 4px 15px rgba(35, 174, 229, 0.3);
+}
+
+
+
+button{
+    margin-top:25px;
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    background:#54a7cb;
+    color:white;
+    font-size:1rem;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0ea5e9;
+}
+
+#askBtn{
+    margin-bottom:20px;
+}
+
+
+
+
+@media(max-width:768px){
+
+    nav h1{
+        font-size:1.5rem;
+    }
+
+    .hero h2{
+        font-size:1.8rem;
+    }
+
+    button{
+        width:100%;
+    }
+}

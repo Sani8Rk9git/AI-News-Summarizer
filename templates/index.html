@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI News Intelligence</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+        <nav>
+            <h1>AI News Intelligence</h1>
+            <p class="tagline">
+                Intelligent News Summarization using NLP & Large Language Models
+            </p>
+            
+        </nav>
+        <div class="container">
+            <section id="hero">
+                <h2>Summarize, Analyze & Understand News Instantly</h2>
+                <p>
+                    Generate concise summaries, detect sentiment,
+                extract key entities, and ask questions about any news article.
+                </p>
+                <button id="getStart" type="button">
+                    Get Started
+                </button>
+            </section>
+            <section id="inputSec" style="display:none;">
+                <h2>Paste News Article</h2>
+                <textarea id="articleInput" rows="14" placeholder="Paste your news article here..."></textarea>
+
+                <button id="analyzeBtn" type="button">
+                    Analyze Article
+                </button>
+            </section>
+            <section id="resultSection" style="display:none;">
+                <div class="card">
+                    <h2>Summary</h2>
+                    <p id="summaryOutput">
+                        Summary will appear here...
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Sentiment</h2>
+                    <p id="sentimentOutput">
+                        Sentiment will appear here...
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Keywords</h2>
+                    <div id="keywordsOutput">
+                        Keywords will appear here...
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Named Entities</h2>
+                    <div id="entitiesOutput">
+                        Entities will appear here...
+                    </div>
+                </div>
+            </section>
+            <section id="qaSection" style="display:none;">
+                <h2>Ask questions about the article</h2>
+                <input type="text" id="questionInput" placeholder="Ask a question...">
+                <button type="button" id="askBtn">
+                    Ask AI
+                </button>
+                <div class="card">
+                    <h2>Answer</h2>
+                    <p id="answerOutput">
+                        Answer will appear here...
+                    </p>
+                </div>
+            </section>
+
+
+
+        </div>
+        <script src="{{url_for('static',filename='script.js')}}"></script>
+
+    </body>
+</html>
